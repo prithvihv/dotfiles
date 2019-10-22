@@ -26,6 +26,7 @@ rec {
 	google-chrome	
   ] ++ [
 	terminator
+    termite
 	tmux
 	zsh
 	zip
