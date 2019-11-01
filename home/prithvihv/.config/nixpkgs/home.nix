@@ -25,6 +25,8 @@ rec {
 	arc-theme	
 	google-chrome	
   ] ++ [
+    xen
+    vagrant
 	terminator
     termite
 	tmux
@@ -39,6 +41,7 @@ rec {
 	pavucontrol
 	playerctl
   ] ++ [
+    postgresql_10
 	python36
 	cmake
 	gcc

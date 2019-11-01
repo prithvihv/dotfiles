@@ -90,13 +90,15 @@ fe() {
 }
 
 alias config='/run/current-system/sw/bin/git --git-dir=$HOME/Desktop/dotfiles.git/ --work-tree=/' 
-
-
-jumpMachine(){
+export SOURCE_HOST=127.0.0.1
+export SOURCE_PORT=6000
+jumpMachin(){
     ssh ubuntu@13.127.27.222
 }
 # User configuration
-
+n(){
+    nix-shell
+}
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
