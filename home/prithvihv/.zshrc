@@ -3,7 +3,7 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/prithvihv/.oh-my-zsh"
-
+export FZF_BASE="/home/prithvihv/.nix-profile/bin/fzf"
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -69,7 +69,7 @@ ZSH_THEME=imajes
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+
 if [ -n "${commands[fzf-share]}" ]; then
   source "$(fzf-share)/key-bindings.zsh"
 fi 
@@ -92,6 +92,7 @@ fe() {
 alias config='/run/current-system/sw/bin/git --git-dir=$HOME/Desktop/dotfiles.git/ --work-tree=/' 
 export SOURCE_HOST=127.0.0.1
 export SOURCE_PORT=6000
+export POSTGRES_URL="postgres://postgres@localhost:5432/nixcloud"
 jumpMachin(){
     ssh ubuntu@13.127.27.222
 }
@@ -111,9 +112,10 @@ n(){
 #   export EDITOR='mvim'
 # fi
 
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
+plugins=(
+    git 
+    fzf
+)
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
