@@ -22,7 +22,6 @@
   networking.extraHosts = 
    ''
      13.228.237.116  api.k8s.staging.juspay.net
-     104.16.20.35 registry.npmjs.org
    '';
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
@@ -74,14 +73,14 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-     wget vim chromium firefox git vscode nodejs-10_x 
+     wget vim chromium firefox git vscode nodejs-10_x android-studio  
    ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
   # programs.gnupg.agent = { enable = true; enableSSHSupport = true; };
-
+  programs.adb.enable = true;
   # List services that you want to enable:
 
   # Enable the OpenSSH daemon.
@@ -140,6 +139,7 @@
     extraGroups = [ 
 	"wheel"
 	"docker"
+	"adbusers"
     ]; # Enable ‘sudo’ for the user.
     shell = pkgs.zsh;
   };
@@ -152,7 +152,11 @@
   
 
  # ===============================>
- nixpkgs.config.allowUnfree = true;
+ nixpkgs.config = {
+ 	allowUnfree = true;
+	#oraclejdk.accept_license = true;
+ };
+ 
 # disable card with bbswitch by default since we turn it on only on demand!
 # hardware.nvidiaOptimus.disable = true;
   # install nvidia drivers in addition to intel one
