@@ -1,0 +1,26 @@
+{
+    "workbench.colorTheme": "Dracula",
+    "vetur.format.defaultFormatterOptions": {
+        "js-beautify-html": {
+            "wrap_attributes": "aligned-multiple"
+        },
+        "prettyhtml": {
+            "printWidth": 400,
+            "wrapAttributes": false
+        }
+    },
+    "workbench.sideBar.location": "right",
+    "editor.lineNumbers": "relative",
+    "vim.handleKeys": {
+        "<C-f>": false,
+        "<C-w>": false,
+        "<C-s>": false,
+        "<C-b>": false,
+        "<C-c>": false,
+    },
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "go.formatTool": "goimports",
+    "go.useLanguageServer": true,
+    "window.zoomLevel": 1,
+    "diffEditor.ignoreTrimWhitespace": false
+}

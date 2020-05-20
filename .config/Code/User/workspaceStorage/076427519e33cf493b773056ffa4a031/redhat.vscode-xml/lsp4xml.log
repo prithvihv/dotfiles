@@ -1,0 +1,12 @@
+Mar 17, 2020 2:47:53 PM org.eclipse.lsp4xml.uriresolver.CacheResourcesManager lambda$downloadResource$0
+INFO: Downloading http://www.w3.org/2001/xml.xsd to /home/prithvi/.lsp4xml/cache/http/www.w3.org/2001/xml.xsd...
+Mar 17, 2020 2:48:09 PM org.eclipse.lsp4xml.uriresolver.CacheResourcesManager lambda$downloadResource$0
+INFO: Downloaded http://www.w3.org/2001/xml.xsd to /home/prithvi/.lsp4xml/cache/http/www.w3.org/2001/xml.xsd in 15691ms
+Mar 19, 2020 9:47:49 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
+Mar 19, 2020 9:48:27 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
+Mar 19, 2020 9:56:12 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
+Mar 19, 2020 1:45:42 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
