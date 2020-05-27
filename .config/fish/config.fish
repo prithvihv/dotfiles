@@ -30,17 +30,25 @@ function jump_signzy_stag
 end
 
 
-function sbi_sample_machine
+function jump_sbi_images_machine
   ssh root@164.52.192.123
 end
 
 
-function vcip_stagging
+function jump_vcip_stagging
   ssh rsz@164.52.198.108
+end
+
+function dr11_gcp
+  ssh prithvihv@35.186.150.59 
 end
 
 function k
   kubectl $argv
+end
+
+function jump_akashMachine
+  ssh prithvihv@192.168.1.2
 end
 
 alias configGit='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
