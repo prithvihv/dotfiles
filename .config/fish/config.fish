@@ -39,7 +39,7 @@ function jump_vcip_stagging
   ssh rsz@164.52.198.108
 end
 
-function dr11_gcp
+function jump_sachin_gcp
   ssh prithvihv@35.186.150.59 
 end
 
