@@ -1,0 +1,76 @@
+{
+    "window.zoomLevel": 1,
+    "workbench.colorTheme": "Dracula",
+    "vetur.format.defaultFormatterOptions": {
+        "js-beautify-html": {
+            "wrap_attributes": "aligned-multiple"
+        },
+        "prettyhtml": {
+            "printWidth": 400,
+            "wrapAttributes": false
+        }
+    },
+    "workbench.sideBar.location": "right",
+    "editor.lineNumbers": "relative",
+    "vim.handleKeys": {
+        "<C-f>": false,
+        "<C-w>": false,
+        "<C-s>": false,
+        "<C-b>": false,
+        "<C-c>": false,
+    },
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "go.formatTool": "goimports",
+    "go.lintFlags": [
+        "--disable-all",
+        "--enable=golint",
+        "--config=~/.gometalinter"
+    ],
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "sqltools.connections": [
+        {
+            "name": "PGSQL",
+            "server": "localhost",
+            "driver": "PostgreSQL",
+            "port": 5433,
+            "database": "stress",
+            "username": "grover",
+            "askForPassword": false,
+            "password": "stress",
+            "connectionTimeout": 15,
+            "pgOptions": {
+                "ssl": false
+            }
+        },
+        {
+            "name": "PGSQL",
+            "server": "localhost",
+            "driver": "PostgreSQL",
+            "port": 5433,
+            "database": "gzp_data",
+            "username": "root",
+            "askForPassword": false,
+            "password": "",
+            "connectionTimeout": 15,
+            "pgOptions": {
+                "ssl": false
+            }
+        },
+        {
+  "database": "gzp_data",
+  "driver": "PostgreSQL",
+  "name": "grover_gzpdata",
+  "password": "pass1",
+  "pgOptions": {
+    "ssl": false
+  },
+  "port": 5432,
+  "previewLimit": 50,
+  "server": "localhost",
+  "username": "grover"
+}
+    ],
+    "sqltools.autoConnectTo": ""
+}

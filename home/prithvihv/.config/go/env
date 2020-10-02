@@ -1,0 +1,3 @@
+GOBIN=/home/prithvihv/code/bin/
+GOPATH=/home/prithvihv/code/
+GOPRIVATE=github.com/gamezop,github.com/Gamezop

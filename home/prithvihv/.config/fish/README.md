@@ -1,0 +1,1 @@
+https://github.com/jorgebucaran/cookbook.fish#how-do-i-remove-a-path-persistently-from-the-path-in-fish

@@ -1,0 +1,24 @@
+ffmpeg -i 'concat:'WhatsApp Ptt 2020-06-29 at 1.07.24 PM.ogg'|'WhatsApp Ptt 2020-06-29 at 12.55.10 PM.ogg'|'WhatsApp Ptt 2020-07-02 at 10.05.01 PM.ogg'|'WhatsApp Ptt 2020-07-04 at 11.10.19 AM.ogg'|'WhatsApp Ptt 2020-07-05 at 3.47.58 PM.ogg'|'WhatsApp Ptt 2020-07-07 at 10.18.17 PM.ogg'|'WhatsApp Ptt 2020-07-07 at 2.59.06 PM.ogg'|'WhatsApp Ptt 2020-07-08 at 2.14.21 PM.ogg'|'WhatsApp Ptt 2020-07-08 at 2.15.18 PM.ogg'|'WhatsApp Ptt 2020-07-09 at 10.18.19 PM.ogg'|'WhatsApp Ptt 2020-07-09 at 11.16.58 PM.ogg'|'WhatsApp Ptt 2020-07-09 at 1.57.59 PM.ogg'|'WhatsApp Ptt 2020-07-09 at 9.44.36 PM.ogg'|'WhatsApp Ptt 2020-07-10 at 7.10.36 PM.ogg'|'WhatsApp Ptt 2020-07-11 at 2.20.18 PM.ogg'|'WhatsApp Ptt 2020-07-13 at 7.37.36 PM.ogg' -c copy out.ogg
+
+
+
+ffmpeg -i 'WhatsApp Ptt 2020-06-29 at 1.07.24 PM.ogg' file2.mp3 
+ffmpeg -i 'WhatsApp Ptt 2020-06-29 at 12.55.10 PM.ogg' file3.mp3
+ffmpeg -i 'WhatsApp Ptt 2020-07-02 at 10.05.01 PM.ogg' file4.mp3
+ffmpeg -i 'WhatsApp Ptt 2020-07-04 at 11.10.19 AM.ogg' file5.mp3
+ffmpeg -i 'WhatsApp Ptt 2020-07-05 at 3.47.58 PM.ogg' file6.mp3
+ffmpeg -i 'WhatsApp Ptt 2020-07-07 at 10.18.17 PM.ogg' file7.mp3
+ffmpeg -i 'WhatsApp Ptt 2020-07-07 at 2.59.06 PM.ogg' file8.mp3
+ffmpeg -i 'WhatsApp Ptt 2020-07-08 at 2.14.21 PM.ogg' file9.mp3
+ffmpeg -i 'WhatsApp Ptt 2020-07-08 at 2.15.18 PM.ogg' file10.mp3
+ffmpeg -i 'WhatsApp Ptt 2020-07-09 at 10.18.19 PM.ogg' file11.mp3
+ffmpeg -i 'WhatsApp Ptt 2020-07-09 at 11.16.58 PM.ogg' file12.mp3
+ffmpeg -i 'WhatsApp Ptt 2020-07-09 at 1.57.59 PM.ogg' file13.mp3
+ffmpeg -i 'WhatsApp Ptt 2020-07-09 at 9.44.36 PM.ogg' file14.mp3
+ffmpeg -i 'WhatsApp Ptt 2020-07-10 at 7.10.36 PM.ogg' file15.mp3
+ffmpeg -i 'WhatsApp Ptt 2020-07-11 at 2.20.18 PM.ogg' file16.mp3
+ffmpeg -i 'WhatsApp Ptt 2020-07-13 at 7.37.36 PM.ogg' file17.mp3
+
+
+ffmpeg -i "concat:file10.mp3|file11.mp3|file12.mp3|file13.mp3|file14.mp3|file15.mp3|file16.mp3|file17.mp3|file2.mp3|file3.mp3|file4.mp3|file5.mp3|file6.mp3|file7.mp3|file8.mp3|file9.mp3" -acodec copy out.mp3
+

@@ -1,0 +1,32 @@
+Config {
+    -- Position xmobar along the top, with a stalonetray in the top right.
+    -- Add right padding to xmobar to ensure stalonetray and xmobar don't
+    -- overlap. stalonetrayrc-single is configured for 12 icons, each 23px
+    -- wide. 
+    -- right_padding = num_icons * icon_size
+    -- right_padding = 12 * 23 = 276
+    -- Example: position = TopP 0 276
+    -- position = TopP 0 276,
+    font = "xft:Fira Sans,Fira Sans SemiBold:style=SemiBold,Regular ,xft:Fira Mono,Fira Mono Medium:style=Medium,Regular",
+    bgColor = "#282a36",
+    fgColor = "#ffffff",
+    lowerOnStart = False,
+    overrideRedirect = False,
+    allDesktops = True,
+    persistent = True,
+    iconRoot = "/home/prithvihv/.xmonad/icons",
+    commands = [
+        Run MultiCpu ["-t","Cpu: <total0> <total1> <total2> <total3>","-L","30","-H","60","-h","#50fa7b","-l","#8be9fd","-n","#ff5555","-w","3"] 10,
+        Run Memory ["-t","Mem: <usedratio>%","-H","8192","-L","4096","-h","#50fa7b","-l","#8be9fd","-n","#ff5555"] 1,
+        Run Swap ["-t","Swap: <usedratio>%","-H","1024","-L","512","-h","#50fa7b","-l","#8be9fd","-n","#ff5555"] 10,
+        Run Date "%a %b %_d %l:%M:%S" "date" 1,
+        Run Com "/bin/bash" ["/home/prithvihv/.xmonad/bin/getMasterVolume"] "volumelevel" 10,
+        Run Com "cat" ["/sys/class/power_supply/BAT1/capacity"] "battery" 10,
+        Run StdinReader
+    ],
+    sepChar = "%",
+    alignSep = "}{",
+    template = "%StdinReader% }{ %multicpu%   %memory%   %swap%  Vol: <fc=#b2b2ff>%volumelevel%</fc> <icon=/bat_full_02.xbm/> 🔋 %battery%  <fc=#50fa7b>%date%</fc>"
+}
+-- %wlp2s0%   
+-- Run Network "wlp2s0" ["-t","Net: <rx>, <tx>","-H","200","-L","10","-h","#50fa7b","-l","#8be9fd","-n","#ff5555"] 10,
