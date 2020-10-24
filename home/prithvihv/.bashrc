@@ -123,3 +123,7 @@ export NVM_DIR="$HOME/.nvm"
 
 export GOPATH="/home/prithvihv/code"
 export XMODIFIERS=@im=ibus
+
+
+
+

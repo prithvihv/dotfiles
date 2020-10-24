@@ -72,5 +72,6 @@
   "username": "grover"
 }
     ],
-    "sqltools.autoConnectTo": ""
+    "sqltools.autoConnectTo": "",
+    "workbench.iconTheme": "vscode-icons"
 }

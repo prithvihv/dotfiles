@@ -20,6 +20,8 @@
 (package! tmux-pane)
 (package! protobuf-mode)
 (package! lsp-mode)
+(package! emoji-display)
+(package! emojify)
 ;; (package! treemacs)
 ;; (package! treemacs-all-icons)
 ;; (package! treemacs-projectile )

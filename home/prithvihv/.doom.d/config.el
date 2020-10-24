@@ -23,6 +23,8 @@
 ;;       doom-variable-pitch-font (font-spec :family "sans" :size 13))
 (setq doom-font (font-spec :family "FiraCode" :size 16))
 (setq display-line-numbers-type 'relative)
+(setq tab-width 4)
+
 (add-hook 'go-mode-hook
           (lambda ()
             (add-hook 'before-save-hook 'gofmt-before-save)))
